@@ -6,6 +6,7 @@ form.addEventListener('submit', handleFormSubmit);
 
 populateForm();
 
+
 function handleFormSubmit(event) {
   event.preventDefault();
 
@@ -43,6 +44,7 @@ function handleFormInput(event) {
     localStorage.setItem(STORAGE_KEY, JSON.stringify(formData));
   }
 }
+
 
 function populateForm() {
  const savedFormData = JSON.parse(localStorage.getItem(STORAGE_KEY));
